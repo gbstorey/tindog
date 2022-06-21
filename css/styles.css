@@ -1,34 +1,57 @@
+/* Body */
+body {
+ text-align:center;
+}
+
+/* Typefaces */
+
+h1, h2, h3, h4, h5, h6, p {
+ font-family: 'Montserrat', sans-serif;
+}
+
+.title-text {
+ font-weight:600;
+ font-size: 4rem;
+ line-height: 1.5;
+ padding: 75px 0px 50px 0px;
+}
+
+/* Colors */
+
+h1 {
+ color: white;
+}
+
+p {
+ color: #8f8f8f;
+}
+
+/* Default Buttons */
+
 .btn {
  margin-right: 10px;
 }
 
-h1 {
- font-family: 'Montserrat', sans-serif;
- font-weight:900;
- font-size: 3.5rem;
- line-height: 1.5;
- color: white;
- padding: 75px 0px 50px 0px;
- width: 70%;
+/* Section Colors */
+
+.white {
+ background-color:#fff;
 }
 
-h2 {
- font-family: 'Montserrat', sans-serif;
- font-weight:900;
- line-height:2;
+.colored {
+ background-color:#ff4c68;
+ color:#fff;
 }
 
-h3 {
- font-family: 'Montserrat', sans-serif;
- font-weight: bold;
- font-size: 1.5rem;
+#testimonials.colored {
+ background-color:#ef8172
 }
 
-p {
- font-family: 'Montserrat', sans-serif;
- color: #8f8f8f;
- font-weight: 600;
+#press.colored {
+ background-color:#ef8172
 }
+
+/* Navbar */
 
 .navbar {
  padding-left:12px;
@@ -48,6 +71,8 @@ p {
  padding: 0 18px;
 }
 
+/* Title Box */
+
 .rotated {
  transform: rotate(10deg);
  width:400px;
@@ -59,19 +84,47 @@ p {
  padding: 100px 0 0 6%;
 }
 
-#testimonials {
- padding: 7% 20%;
- text-align: center;
- background-color: #ef8172;
- color:white;
- position:relative;
+#title {
+ padding: 3% 10% 10% 10%;
+ position: relative;
+ z-index:-2;
+ text-align:left;
 }
 
+@media only screen and (max-width:992px) {
+
+ #title {
+  text-align: center;
+ }
+ .rotated {
+  transform:rotate(0deg);
+  position:relative;
+  margin:0 auto;
+  padding-top:30px;
+ }
+ .dog-image {
+  text-align: center;
+  padding:0;
+ }
+
+ }
+
+ #title h1{
+  font-size:300%;
+  width:100%;
+  margin: 0 auto;
+ }
+
+/* Features */
+
 .feature-list {
- text-align:center;
  margin: 0 auto;
 }
 
+.h3-features {
+ font-size: 1.5rem;
+ font-weight: bold;
+}
 
 .icon {
  padding: 20px 0px 20px 0px;
@@ -83,23 +136,26 @@ p {
  color:#ff4c68;
 }
 
-
-#title {
- background-color: #ff4c68;
- padding: 3% 10% 10% 10%;
- position: relative;
- z-index:-2;
+.p-features {
+ font-weight: 600;
 }
 
 #features {
- background-color:white;
  padding-top:100px;
  padding-bottom:100px;
  position:relative;
 }
 
 /* Testimonials */
+.carousel-item {
+ padding: 7% 15%;
+}
 
+.h2-carousel {
+ font-weight:900;
+ line-height:2;
+ font-size:2.5em;
+}
 
 .testimonial-image {
  width:15%;
@@ -107,56 +163,50 @@ p {
  margin:20px;
 }
 
-/* Press */
-#press {
- background-color:#ef8172;
- text-align:center;
- padding-bottom:100px;
+#testimonials {
+ padding: 7% 20%;
+ text-align: center;
+ position:relative;
 }
 
+@media only screen and (max-width:992px) {
+ #testimonials {
+  padding: 7% 5%;
+ }
+}
+
+/* Press */
 .press-logo {
  width: 20%;
  padding:0 20px;
 }
 
-.carousel-item {
- padding: 7% 15%;
+#press {
+ padding-bottom:100px;
 }
 
 /* Pricing */
-
-#pricing {
- text-align: center;
- padding: 50px 20px;
-}
-
-#pricing h2{
- font-size: 3.5em;
-}
-
-.card {
- margin: 20px auto;
-}
-
-.star {
- color:goldenrod;
-}
-
-.card-deck {
- margin: 0px auto;
-}
-
 .card-header {
  background-color:rgb(218, 218, 218);
+}
+
+.h2-cards {
+ font-weight:bold;
+ font-size: 3em;
 }
 
 .pricing-column {
  padding: 3% 2%;
 }
 
+#pricing {
+ text-align: center;
+ padding: 50px 20px;
+}
+
+/* Call to Action */
+
 #cta {
- background-color:#ff4c68;
- text-align:center;
  padding: 100px 300px;
 }
 
@@ -164,8 +214,16 @@ p {
  width:auto;
 }
 
+@media only screen and (max-width:992px) {
+ #cta {
+  padding:100px 0;
+ }
+}
+
+/* Footer */
+
 #footer {
- padding:100px 0;
+ padding: 100px 0;
  line-height: 3;
  text-align: center;
 }
@@ -175,30 +233,7 @@ p {
 }
 
 @media only screen and (max-width:992px) {
-
- .rotated {
-  transform:rotate(0deg);
-  position:relative;
-  margin:0 auto;
-  padding-top:30px;
- }
- 
- #title {
-  text-align: center;
- }
-
- .dog-image {
-  text-align: center;
-  padding:0;
- }
-
- #title h1{
-  font-size:300%;
-  width:100%;
-  margin: 0 auto;
- }
-
- #testimonials {
-  padding: 7% 5%;
+ #cta {
+  padding:100px 0;
  }
 }
