@@ -1,9 +1,5 @@
-#title {
- background-color: #ff4c68;
-}
-
-#features {
- background-color:white;
+.btn {
+ margin-right: 10px;
 }
 
 h1 {
@@ -13,6 +9,13 @@ h1 {
  line-height: 1.5;
  color: white;
  padding: 75px 0px 50px 0px;
+ width: 70%;
+}
+
+h2 {
+ font-family: 'Montserrat', sans-serif;
+ font-weight:900;
+ line-height:2;
 }
 
 h3 {
@@ -24,47 +27,11 @@ h3 {
 p {
  font-family: 'Montserrat', sans-serif;
  color: #8f8f8f;
-}
-
-.feature-list {
- text-align:center;
- margin: 0 auto;
-}
-
-.container-fluid {
- padding: 3% 15%;
-}
-
-.rotated {
- transform: rotate(15deg);
- width:375px;
- padding-top:100px;
- padding-bottom:100px;
- margin: 0 50px;
-}
-
-.icon {
- padding: 100px 0px 20px 0px;
- color:#ef8172; 
- font-size:3rem;
-}
-
-.icon:hover {
- color:#ff4c68;
-}
-
-@media only screen and (max-width:992px) {
- .rotated {
-  transform:rotate(0deg);
- }
- #title {
-  text-align: center;
- }
-
+ font-weight: 600;
 }
 
 .navbar {
- padding-bottom: 3rem;
+ padding-left:12px;
 }
 
 .navbar-brand {
@@ -81,5 +48,157 @@ p {
  padding: 0 18px;
 }
 
+.rotated {
+ transform: rotate(10deg);
+ width:400px;
+ position:absolute;
+}
+
+.dog-image {
+ text-align: left;
+ padding: 100px 0 0 6%;
+}
+
+#testimonials {
+ padding: 7% 20%;
+ text-align: center;
+ background-color: #ef8172;
+ color:white;
+ position:relative;
+}
+
+.feature-list {
+ text-align:center;
+ margin: 0 auto;
+}
 
 
+.icon {
+ padding: 20px 0px 20px 0px;
+ color:#ef8172; 
+ font-size:3.5rem;
+}
+
+.icon:hover {
+ color:#ff4c68;
+}
+
+
+#title {
+ background-color: #ff4c68;
+ padding: 3% 10% 10% 10%;
+ position: relative;
+ z-index:-2;
+}
+
+#features {
+ background-color:white;
+ padding-top:100px;
+ padding-bottom:100px;
+ position:relative;
+}
+
+/* Testimonials */
+
+
+.testimonial-image {
+ width:15%;
+ border-radius:100%;
+ margin:20px;
+}
+
+/* Press */
+#press {
+ background-color:#ef8172;
+ text-align:center;
+ padding-bottom:100px;
+}
+
+.press-logo {
+ width: 20%;
+ padding:0 20px;
+}
+
+.carousel-item {
+ padding: 7% 15%;
+}
+
+/* Pricing */
+
+#pricing {
+ text-align: center;
+ padding: 50px 20px;
+}
+
+#pricing h2{
+ font-size: 3.5em;
+}
+
+.card {
+ margin: 20px auto;
+}
+
+.star {
+ color:goldenrod;
+}
+
+.card-deck {
+ margin: 0px auto;
+}
+
+.card-header {
+ background-color:rgb(218, 218, 218);
+}
+
+.pricing-column {
+ padding: 3% 2%;
+}
+
+#cta {
+ background-color:#ff4c68;
+ text-align:center;
+ padding: 100px 300px;
+}
+
+#cta h1{
+ width:auto;
+}
+
+#footer {
+ padding:100px 0;
+ line-height: 3;
+ text-align: center;
+}
+
+.footer-icon {
+ margin: 0 10px;
+}
+
+@media only screen and (max-width:992px) {
+
+ .rotated {
+  transform:rotate(0deg);
+  position:relative;
+  margin:0 auto;
+  padding-top:30px;
+ }
+ 
+ #title {
+  text-align: center;
+ }
+
+ .dog-image {
+  text-align: center;
+  padding:0;
+ }
+
+ #title h1{
+  font-size:300%;
+  width:100%;
+  margin: 0 auto;
+ }
+
+ #testimonials {
+  padding: 7% 5%;
+ }
+}
